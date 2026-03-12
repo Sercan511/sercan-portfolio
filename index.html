@@ -23,7 +23,8 @@
     <meta property="og:description"
         content="Portfolio von Sercan – IBA Schüler in Cham. Mein Weg zum Anlagenführer EFZ bei V-Zug.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="https://sercan511.github.io/sercan-portfolio/">
+    <meta property="og:image" content="https://sercan511.github.io/sercan-portfolio/images/profile.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -119,7 +120,7 @@
     <section class="section section-lernen" id="lernen" aria-labelledby="lernen-title">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-tag">02</span>
+                <span class="section-tag">01</span>
                 <h2 class="section-title" id="lernen-title">Was habe ich <span class="gradient-text">gelernt?</span>
                 </h2>
                 <p class="section-subtitle">Klicke auf ein Fach um Details zu sehen</p>
@@ -390,7 +391,7 @@
     <section class="section section-beruf" id="beruf" aria-labelledby="beruf-title">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-tag">03</span>
+                <span class="section-tag">02</span>
                 <h2 class="section-title" id="beruf-title">Meine <span class="gradient-text">Berufswahl</span></h2>
                 <p class="section-subtitle">Mein Weg zur richtigen Karriere</p>
             </div>
@@ -566,7 +567,7 @@
     <section class="section section-ziele" id="ziele" aria-labelledby="ziele-title">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-tag">05</span>
+                <span class="section-tag">03</span>
                 <h2 class="section-title" id="ziele-title">Meine <span class="gradient-text">Ziele</span></h2>
                 <p class="section-subtitle">Was ich erreichen möchte und wohin mein Weg führt</p>
             </div>
@@ -631,7 +632,7 @@
     <section class="section section-kontakt" id="kontakt" aria-labelledby="kontakt-title">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-tag">06</span>
+                <span class="section-tag">04</span>
                 <h2 class="section-title" id="kontakt-title">Mein <span class="gradient-text">Kontakt</span></h2>
                 <p class="section-subtitle">Du möchtest mich erreichen? Schreib mir gerne!</p>
             </div>
@@ -641,6 +642,30 @@
                     <h3>E-Mail</h3>
                     <p>sercan.ueren@stud.iba-cham.ch</p>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FEEDBACK ====== -->
+    <section class="section section-feedback" id="feedback" aria-labelledby="feedback-title">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">05</span>
+                <h2 class="section-title" id="feedback-title">Dein <span class="gradient-text">Feedback</span></h2>
+                <p class="section-subtitle">Was denkst du über mein Portfolio? Ich freue mich über deine Rückmeldung!</p>
+            </div>
+            <div class="feedback-form-wrapper animate-on-scroll">
+                <form id="feedbackForm" action="https://formspree.io/f/xpwzgkvq" method="POST">
+                    <div class="form-group">
+                        <label for="feedbackName">Dein Name</label>
+                        <input type="text" id="feedbackName" name="name" placeholder="Dein Name..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedbackMessage">Deine Nachricht</label>
+                        <textarea id="feedbackMessage" name="message" rows="4" placeholder="Schreib mir dein Feedback..." required></textarea>
+                    </div>
+                    <button type="submit" class="feedback-submit-btn">📨 Feedback senden</button>
+                </form>
             </div>
         </div>
     </section>
