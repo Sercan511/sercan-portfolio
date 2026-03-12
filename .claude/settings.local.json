@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"/c/Users/Klient 1/OneDrive - athene.ch/Desktop/Portfoliyo\" && python -m http.server 8000)"
+    ]
+  }
+}
