@@ -746,5 +746,34 @@ document.addEventListener('DOMContentLoaded', () => {
         animate();
     }
 
+    // ---- FEEDBACK FORM — AJAX SUBMISSION ----
+    const feedbackForm = document.getElementById('feedbackForm');
+    if (feedbackForm) {
+        feedbackForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const btn = feedbackForm.querySelector('.feedback-submit-btn');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '⏳ Wird gesendet...';
+            btn.disabled = true;
+
+            const formData = new FormData(feedbackForm);
+
+            fetch(feedbackForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+                // Redirect to thankyou page regardless
+                window.location.href = 'thankyou.html';
+            })
+            .catch(() => {
+                // Even if there's an error, try redirecting
+                window.location.href = 'thankyou.html';
+            });
+        });
+    }
+
     console.log('🚀 Portfolio loaded with animations!');
 });
